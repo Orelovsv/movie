@@ -7,7 +7,7 @@
     $conn = mysqli_connect($host, $userName, $password, $dbName);
 
     if (!$conn) {
-        die('Error database conn');
+        die('Connection failed');
     }
     mysqli_set_charset($conn, 'utf8');
 
